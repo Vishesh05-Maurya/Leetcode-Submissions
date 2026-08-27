@@ -3,9 +3,7 @@ class Solution {
         if(n<=0){
             return false;
         }
-        else if(n==1){
-            return true;
-        }else{
+       else{
             while(n%3==0){
                 n = n/3;
         }
