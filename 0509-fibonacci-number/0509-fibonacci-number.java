@@ -6,16 +6,7 @@ class Solution {
         if(n==1){
             return 1;
         }
-        int first = 0;
-        int second = 1;
-        int next=0;
-        for(int i=2 ;i<=n;i++){
-            next = first+second;
-            first = second;
-            second=next;
-        
-        }
-        return next;
+        return fib(n-1)+fib(n-2);
         
     }
 }
