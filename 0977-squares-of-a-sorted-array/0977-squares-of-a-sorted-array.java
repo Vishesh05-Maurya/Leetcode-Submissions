@@ -10,11 +10,13 @@ class Solution {
              if(ss>end){
             arr[p]=ss;
             i++;
+             p--;
         }else{
             arr[p]=end;
             j--;
+             p--;
         }
-        p--;
+       
         }
        
  return arr;
