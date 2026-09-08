@@ -5,15 +5,17 @@ public class Solution {
 
         while (left < right) {
          
-            while (left < right && !Character.isLetterOrDigit(s.charAt(left))) {
+        if (!Character.isLetterOrDigit(s.charAt(left))) {
                 left++;
+                continue;
             }
            
-            while (left < right && !Character.isLetterOrDigit(s.charAt(right))) {
+        if (!Character.isLetterOrDigit(s.charAt(right))) {
                 right--;
+                continue;
             }
 
-            if (Character.toLowerCase(s.charAt(left)) != Character.toLowerCase(s.charAt(right))) {
+      if (Character.toLowerCase(s.charAt(left)) != Character.toLowerCase(s.charAt(right))) {
                 return false;
             }
 
