@@ -5,18 +5,15 @@ class Solution {
        int   p = nums.length-1;
         int arr[] = new int[nums.length];
         while(i<=j){
-            int ss = nums[i]*nums[i];
-            int end = nums[j]*nums[j];
-             if(ss>end){
-            arr[p]=ss;
+             if(Math.abs(nums[i])>Math.abs(nums[j])){
+            arr[p]=nums[i]*nums[i];
             i++;
-             p--;
         }else{
-            arr[p]=end;
+            arr[p]=nums[j]*nums[j];
             j--;
-             p--;
+            
         }
-       
+       p--;
         }
        
  return arr;
