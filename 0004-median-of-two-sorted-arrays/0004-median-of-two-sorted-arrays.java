@@ -6,7 +6,7 @@ class Solution {
     Arrays.sort(result);
     int len = result.length;
   
-    if(len%2!=0){
+    if(len%2!=0){ 
        
       return result[len/2];
     }
